@@ -366,6 +366,13 @@ h6 {
   color: var(--color-default);
 }
 
+@media (max-width: 991px) {
+  .navbar-mobile #loginBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;

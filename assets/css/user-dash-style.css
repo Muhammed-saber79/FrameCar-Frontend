@@ -367,6 +367,13 @@ h6 {
   color: var(--color-default);
 }
 
+@media (max-width: 991px) {
+  .navbar-mobile #logoutBtn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -536,6 +543,36 @@ button:hover {
 
   .content .right .order-container .bottom .data {
     width: 50%;
+  }
+
+  /* Adjust any other responsive styles here */
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content .left,
+  .content .right {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .content .left .addBtn {
+    padding: 10px 20px;
+    margin: 10px;
+  }
+
+  .content .right .order-container .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .content .right .order-container .bottom .data {
+    width: 100%;
   }
 
   /* Adjust any other responsive styles here */
